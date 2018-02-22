@@ -1,4 +1,3 @@
-
 function searchButton(){
     var search = document.getElementById("search").value;
 if(search == ""){
