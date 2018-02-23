@@ -6,6 +6,11 @@ export default class App extends Component {
         items: []
       };
     }
+
+    onChange = (event) => {
+        this.setState({term: event.target.value});
+      }
+
     render() {
         return (
           <div></div>
