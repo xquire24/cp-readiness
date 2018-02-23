@@ -16,6 +16,14 @@ export default class App extends Component {
         this.setState({term: event.target.value});
       }
 
+      onSubmit = (event) => {
+        event.preventDefault()
+        this.setState({
+          term: '',
+          items: [...this.state.items, this.state.term]
+        });
+      }
+
     render() {
         return (
           <div></div>
